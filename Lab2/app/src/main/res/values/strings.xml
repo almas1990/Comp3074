@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LabEx2</string>
+    <string name="counter_zero">0</string>
+    <string name="subtract">-</string>
+    <string name="add">+</string>
+    <string name="reset">Reset</string>
+    <string name="step">Step</string>
+    <string name="logo_description">Android logo</string>
+</resources>

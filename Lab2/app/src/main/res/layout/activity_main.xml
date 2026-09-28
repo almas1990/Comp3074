@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    tools:context=".MainActivity">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/logo_description"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Counter Output -->
+    <TextView
+        android:id="@+id/textCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/counter_zero"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo" />
+
+    <!-- Subtract Button -->
+    <Button
+        android:id="@+id/buttonSubtract"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#F44336"
+        android:text="@string/subtract"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textCounter" />
+
+    <!-- Add Button -->
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/add"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonSubtract"
+        app:layout_constraintTop_toTopOf="@id/buttonSubtract" />
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#FF4081"
+        android:text="@string/reset"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonStep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonSubtract" />
+
+    <!-- Step Button -->
+    <Button
+        android:id="@+id/buttonStep"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="#009688"
+        android:text="@string/step"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonReset"
+        app:layout_constraintTop_toTopOf="@id/buttonReset" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
